@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/employees")
 public class EmployeeController {
 
-    private EmployeeService service;
+    private final EmployeeService service;
 
     public EmployeeController(EmployeeService service) {
         this.service = service;
